@@ -1,6 +1,7 @@
 package cn.com.consumer.controller;
 
 import cn.com.consumer.service.AbcService;
+
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class TestController {
     @Autowired
     AbcService abcService;
 
+
     @Bean
     public Action<Chain> index() {
 
@@ -30,6 +32,8 @@ public class TestController {
                 .get(ctx ->{
                     Object object = abcService.echoService.$echo("asdasd");
                     System.out.println(object);
+                    Object a = abcService.genericService.$invoke("asd",null,null);
+                    System.out.println(a);
                     ctx.render(jsonObject.toString());
                 });
     }
