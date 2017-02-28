@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>consumerweb</module>
+        <module>consumerdomain</module>
     </modules>
 
     <properties>
