@@ -1,10 +1,11 @@
-package cn.com.provider.settings.springboot;
+package cn.com.provider.settings.dubbo;
 
 import com.alibaba.dubbo.config.spring.AnnotationBean;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.Environment;
+
 
 public class DubboConfigurationApplicationContextInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
 

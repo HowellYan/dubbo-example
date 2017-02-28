@@ -1,4 +1,4 @@
-package cn.com.provider.settings.springboot;
+package cn.com.consumer.settings.dubbo;
 
 import org.springframework.boot.context.event.ApplicationPreparedEvent;
 import org.springframework.context.ApplicationEvent;

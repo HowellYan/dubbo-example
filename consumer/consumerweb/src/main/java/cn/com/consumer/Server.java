@@ -1,6 +1,7 @@
-import cn.com.provider.settings.MyBatis.MyBatisLog;
-import cn.com.provider.settings.Ratpack.StartRatpack;
-import org.mybatis.spring.annotation.MapperScan;
+package cn.com.consumer;
+
+
+import cn.com.consumer.settings.Ratpack.StartRatpack;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,15 +13,12 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @StartRatpack
 @ComponentScan({
-        "cn.com.provider"
-})
-@MapperScan({
-        "cn.com.provider"
+        "cn.com.consumer"
 })
 public class Server {
 
     public static void main(String[] args) {
-        org.apache.ibatis.logging.LogFactory.useCustomLogging(MyBatisLog.class);
+
 
         SpringApplication.run(Server.class, args);
     }

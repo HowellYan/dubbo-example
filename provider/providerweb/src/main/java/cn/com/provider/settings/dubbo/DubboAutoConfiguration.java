@@ -1,4 +1,4 @@
-package cn.com.provider.settings.springboot;
+package cn.com.provider.settings.dubbo;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;

@@ -32,11 +32,7 @@
                 <artifactId>javax.servlet-api</artifactId>
                 <version>3.1.0</version>
             </dependency>
-            <dependency>
-                <groupId>RatpackHttp</groupId>
-                <artifactId>RatpackModel</artifactId>
-                <version>${parent.version}</version>
-            </dependency>
+
             <!-- ratpack start -->
             <dependency>
                 <groupId>io.ratpack</groupId>
