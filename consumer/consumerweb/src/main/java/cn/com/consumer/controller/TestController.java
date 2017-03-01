@@ -30,10 +30,7 @@ public class TestController {
 
         return chain -> chain
                 .get(ctx ->{
-//                    Object object = abcService.echoService.$echo("asdasd");
-//                    System.out.println(object);
-//                    Object a = abcService.genericService.$invoke("asd",null,null);
-//                    System.out.println(a);
+
                     VerificationRequst verificationRequst = new VerificationRequst();
                     verificationRequst.setIp("127.0.0.1");
                     verificationRequst.setUserId("123456");
