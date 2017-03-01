@@ -1,9 +1,8 @@
 package cn.com.consumer.controller;
 
-import cn.com.commons.response.CommonResponse;
-import cn.com.consumer.service.AbcService;
+import cn.com.commons.Utils.GetString;
+import cn.com.consumer.service.Impl.TestService;
 import cn.com.provider.request.VerificationRequst;
-import cn.com.provider.response.VerificationResponse;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ import ratpack.handling.Chain;
 public class TestController {
 
     @Autowired
-    AbcService abcService;
+    TestService testService;
 
 
     @Bean
@@ -36,16 +35,13 @@ public class TestController {
 //                    System.out.println(object);
 //                    Object a = abcService.genericService.$invoke("asd",null,null);
 //                    System.out.println(a);
-
                     VerificationRequst verificationRequst = new VerificationRequst();
                     verificationRequst.setIp("127.0.0.1");
                     verificationRequst.setUserId("123456");
-                    verificationRequst.setKeep("1234567894556123");
                     verificationRequst.setType(0);
-                    CommonResponse<VerificationResponse> commonResponse = abcService.verificationService.verification(verificationRequst);
+                    verificationRequst.setKeep(GetString.getKeep());
 
-                    System.out.println(commonResponse.toString());
-                    ctx.render(jsonObject.toString());
+                    ctx.render(testService.verification(verificationRequst).toString());
                 });
     }
 }

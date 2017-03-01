@@ -16,6 +16,7 @@ public class CommonRequest implements Serializable {
     private String keep;
 
     public CommonRequest() {
+
     }
 
     public String getKeep() {

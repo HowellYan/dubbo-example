@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * e-mail:th15817161961@gmail.com
  */
 @Component
-public class AbcService {
+public class ProviderService {
 
     @Reference
     public EchoService echoService;

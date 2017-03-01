@@ -24,7 +24,6 @@ public class ConsumerFilter implements Filter {
 			} catch (IllegalArgumentException e) {
 				LOGGER.info("[{}.{}] Start to handle request [{}] . [{}] ", className, methodName, serverAddress, args.toString());
 			}
-            
         } else {
             LOGGER.info("[{}.{}] Start to handle request .",className, methodName);
         }
