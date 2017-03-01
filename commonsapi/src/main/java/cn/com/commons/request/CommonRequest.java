@@ -1,5 +1,6 @@
 package cn.com.commons.request;
 
+import cn.com.commons.Utils.GetString;
 import org.hibernate.validator.constraints.NotBlank;
 
 import java.io.Serializable;
@@ -16,7 +17,7 @@ public class CommonRequest implements Serializable {
     private String keep;
 
     public CommonRequest() {
-
+        keep = GetString.getKeep();
     }
 
     public String getKeep() {

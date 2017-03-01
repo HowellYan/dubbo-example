@@ -1,6 +1,5 @@
 package cn.com.consumer.controller;
 
-import cn.com.commons.Utils.GetString;
 import cn.com.consumer.service.Impl.TestService;
 import cn.com.provider.request.VerificationRequst;
 import lombok.extern.slf4j.Slf4j;
@@ -39,7 +38,6 @@ public class TestController {
                     verificationRequst.setIp("127.0.0.1");
                     verificationRequst.setUserId("123456");
                     verificationRequst.setType(0);
-                    verificationRequst.setKeep(GetString.getKeep());
 
                     ctx.render(testService.verification(verificationRequst).toString());
                 });
