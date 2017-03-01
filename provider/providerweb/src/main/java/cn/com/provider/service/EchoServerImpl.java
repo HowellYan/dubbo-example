@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
  * Created by Howell on 28/2/17.
  * e-mail:th15817161961@gmail.com
  */
-@Service(version = "1.0.0")
+@Service
 @Slf4j
 public class EchoServerImpl implements EchoService {
     @Override

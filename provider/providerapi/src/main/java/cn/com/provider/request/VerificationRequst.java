@@ -2,18 +2,17 @@ package cn.com.provider.request;
 
 import cn.com.commons.request.CommonRequest;
 import lombok.Data;
-import lombok.NonNull;
 import lombok.ToString;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Null;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 /**
- * Created by susie on 2017/2/28.
+ * Created by Howell on 28/2/17.
+ * e-mail:th15817161961@gmail.com
  */
 @Data
 @ToString

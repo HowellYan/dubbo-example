@@ -3,7 +3,7 @@
     <parent>
         <artifactId>consumer</artifactId>
         <groupId>consumer</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>consumer-web</artifactId>
@@ -20,7 +20,14 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>provider</groupId>
+            <artifactId>provider-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-api</groupId>
+            <artifactId>commons-api</artifactId>
+        </dependency>
         <dependency>
             <groupId>io.ratpack</groupId>
             <artifactId>ratpack-guice</artifactId>
@@ -108,6 +115,10 @@
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
             <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>

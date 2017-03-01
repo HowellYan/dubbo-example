@@ -1,5 +1,6 @@
 package cn.com.consumer.service;
 
+import cn.com.provider.service.VerificationService;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.rpc.service.EchoService;
 import com.alibaba.dubbo.rpc.service.GenericService;
@@ -18,4 +19,6 @@ public class AbcService {
     @Reference(version = "1.0.0")
     public GenericService genericService;
 
+    @Reference(version = "1.0.0", filter = "consumerFilter")
+    public VerificationService verificationService;
 }
