@@ -1,8 +1,6 @@
 package cn.com.consumer.settings.dubbo;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.ProtocolConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
+import com.alibaba.dubbo.config.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "spring.dubbo", locations = "classpath:config/app.properties")
@@ -15,6 +13,10 @@ public class DubboProperties {
     private RegistryConfig registry;
 
     private ProtocolConfig protocol;
+
+    private ProviderConfig provider;
+
+    private ConsumerConfig consumer;
 
     public String getScan() {
         return scan;
@@ -48,4 +50,19 @@ public class DubboProperties {
         this.protocol = protocol;
     }
 
+    public ProviderConfig getProvider() {
+        return provider;
+    }
+
+    public void setProvider(ProviderConfig provider) {
+        this.provider = provider;
+    }
+
+    public ConsumerConfig getConsumer() {
+        return consumer;
+    }
+
+    public void setConsumer(ConsumerConfig consumer) {
+        this.consumer = consumer;
+    }
 }

@@ -1,0 +1,4 @@
+consumerFilter=cn.com.provider.filter.ConsumerFilter
+providerFilter=cn.com.provider.filter.ProviderFilter
+
+

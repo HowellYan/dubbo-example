@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class AbcService {
 
-    @Reference(version = "1.0.0")
+    @Reference
     public EchoService echoService;
 
-    @Reference(version = "1.0.0")
+    @Reference
     public GenericService genericService;
 
-    @Reference(version = "1.0.0", filter = "consumerFilter")
+    @Reference
     public VerificationService verificationService;
 }
