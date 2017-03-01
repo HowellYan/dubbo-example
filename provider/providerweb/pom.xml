@@ -226,7 +226,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.4.3.RELEASE</version>
                 <configuration>
-                    <mainClass>SpringBootApp</mainClass>
+                    <mainClass>Server</mainClass>
                 </configuration>
                 <executions>
                     <execution>
