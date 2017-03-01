@@ -1,10 +1,18 @@
-spring.dubbo.application.name=${spring.dubbo.application.name}
-spring.dubbo.registry.address=${spring.dubbo.registry.address}
-spring.dubbo.protocol.name=${spring.dubbo.protocol.name}
-spring.dubbo.protocol.port=${spring.dubbo.protocol.port}
-spring.dubbo.scan=${spring.dubbo.scan}
+# dubbo start #
+spring.dubbo.application.name=${spring_dubbo_application_name}
+spring.dubbo.registry.address=${spring_dubbo_registry_address}
+spring.dubbo.protocol.name=${spring_dubbo_protocol_name}
+spring.dubbo.protocol.port=${spring_dubbo_protocol_port}
+spring.dubbo.protocol.threads=${spring_dubbo_protocol_threads}
+spring.dubbo.provider.filter=${spring_dubbo_provider_filter}
+spring.dubbo.provider.version=${spring_dubbo_provider_version}
+spring.dubbo.consumer.filter=${spring_dubbo_consumer_filter}
+spring.dubbo.consumer.version=${spring_dubbo_consumer_version}
+spring.dubbo.consumer.loadbalance=${spring_dubbo_consumer_loadbalance}
+spring.dubbo.consumer.timeout=${spring_dubbo_consumer_timeout}
+spring.dubbo.scan=${spring_dubbo_scan}
 
-
+# mysql start #
 app.mysql_aliyun=${app_mysql_aliyun}
 app.mysql_aliyun_user=${app_mysql_aliyun_user}
 app.mysql_aliyun_pass=${app_mysql_aliyun_pass}
@@ -15,6 +23,7 @@ app.mysql_aliyun_minIdle=${app_mysql_aliyun_minIdle}
 app.mysql_aliyun_maxWait=${app_mysql_aliyun_maxWait}
 app.mysql_aliyun_timeBetweenEvictionRunsMillis=${app_mysql_aliyun_timeBetweenEvictionRunsMillis}
 
+# redis start #
 app.redis_pool_maxTotal=${app_redis_pool_maxTotal}
 app.redis_pool_maxIdle=${app_redis_pool_maxIdle}
 app.redis_pool_maxWaitMillis=${app_redis_pool_maxWaitMillis}
@@ -23,5 +32,6 @@ app.redis_pool_testOnReturn=${app_redis_pool_testOnReturn}
 app.redis_sentinel_master=${app_redis_sentinel_master}
 app.redis_sentinel_nodes=${app_redis_sentinel_nodes}
 
+# log start #
 logLevel=${logLevel}
 logRoot=${logRoot}
