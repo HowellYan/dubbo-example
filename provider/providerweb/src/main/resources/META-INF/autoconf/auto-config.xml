@@ -2,6 +2,6 @@
 <config>
        <script>
               <generate template="app.properties.vm"
-                        destfile="config/app.properties" charset="UTF-8" />
+                        destfile="application.properties" charset="UTF-8" />
        </script>
 </config>
