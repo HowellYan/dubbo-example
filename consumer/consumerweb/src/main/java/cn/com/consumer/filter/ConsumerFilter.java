@@ -35,11 +35,11 @@ public class ConsumerFilter implements Filter {
             Long endTime = System.currentTimeMillis();
             Long elapsed = endTime - startTime;
             if (result != null && result.getValue() != null) {
-                LOGGER.info("[{}.{}]  Finish handling request . [{}].", className, methodName, gson.toJson(result.getValue()));
+                LOGGER.info("[{}.{}] Finish handling request . [{}].", className, methodName, gson.toJson(result.getValue()));
             } else {
-                LOGGER.info("[{}.{}]  Finish handling request .", className, methodName);
+                LOGGER.info("[{}.{}] Finish handling request .", className, methodName);
             }
-            LOGGER.info("[{}.{}]  Elapsed:{} ms.",className, methodName,elapsed);
+            LOGGER.info("[{}.{}] Elapsed:{} ms.",className, methodName,elapsed);
         }
         return result;
     }
