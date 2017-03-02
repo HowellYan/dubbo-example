@@ -33,7 +33,7 @@ public class TestController {
 
                     VerificationRequst verificationRequst = new VerificationRequst();
                     verificationRequst.setIp("127.0.0.1");
-                    verificationRequst.setUserId("123456");
+                    verificationRequst.setUserId("145641234561111");
                     verificationRequst.setType(0);
 
                     ctx.render(testService.verification(verificationRequst).toString());
