@@ -21,7 +21,6 @@ public class TestController {
     @Autowired
     TestService testService;
 
-
     @Bean
     public Action<Chain> index() {
 
