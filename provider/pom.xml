@@ -288,6 +288,7 @@
                 </configuration>
                 <version>3.3</version>
             </plugin>
+
         </plugins>
     </build>
 
