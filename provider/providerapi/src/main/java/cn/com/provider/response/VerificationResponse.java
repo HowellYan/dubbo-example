@@ -15,4 +15,12 @@ public class VerificationResponse implements Serializable {
      * 锁定
      */
     boolean locking;
+
+    String u_id;
+
+    String u_name;
+
+    String u_pass;
+
+    String u_phone;
 }
